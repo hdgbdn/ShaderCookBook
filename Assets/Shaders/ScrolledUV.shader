@@ -29,6 +29,8 @@
 		fixed4 _Color;
 		fixed _ScrollXSpeed;
 		fixed _ScrollYSpeed;
+		fixed xScrollValue;
+		fixed yScrollValue;
 
 		// Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
 		// See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
@@ -42,8 +44,8 @@
 			fixed2 scrolledUV = IN.uv_MainTex;
 
 			// Create variables store the x and y displacement
-			fixed xScrollValue = _ScrollXSpeed * _Time;
-			fixed yScrollValue = _ScrollYSpeed * _Time;
+			xScrollValue += _ScrollXSpeed * unity_DeltaTime;
+			yScrollValue += _ScrollYSpeed * _Time;
 
 			// Apply the scrolled UV offset
 			scrolledUV += fixed2(xScrollValue, yScrollValue);
