@@ -14,7 +14,7 @@ sysinfo.txt
 *.pidb.meta
 
 ###
-# VS/MD solution and project files
+# VS/MD/Rider solution and project files
 ###
 [Ee]xportedObj/
 *.booproj
@@ -28,6 +28,7 @@ sysinfo.txt
 *.pidb
 .DS_Store
 .vs/
+.idea
 
 ###
 # OS generated
