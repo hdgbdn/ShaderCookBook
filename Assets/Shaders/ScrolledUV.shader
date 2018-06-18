@@ -8,7 +8,7 @@
 		_ScrollYSpeed ("Y Scroll Speed", Range(1, 10)) = 1
 	}
 	SubShader {
-		Tags { "RenderType"="Opaque" }
+		Tags { "RenderType"="Opaque" "Queue" = "Background" }
 		LOD 200
 
 		CGPROGRAM
