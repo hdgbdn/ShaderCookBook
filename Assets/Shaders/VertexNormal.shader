@@ -46,7 +46,7 @@
 				fixed3 worldNormal = normalize(mul(v.normal, (float3x3)unity_WorldToObject));
 				fixed3 worldLightDir = normalize(_WorldSpaceLightPos0.xyz);
 
-				fixed3 diffuse = _LightColor0.rgb * _Diffuse.rgb * pow((dot(worldNormal, worldLightDir)), _Gloss);
+				fixed3 diffuse = _LightColor0.rgb * _Diffuse.rgb * pow((dot(worldLightDir, worldNormal)), _Gloss);
 				o.color = diffuse + ambient;
 				return o;
 			}

@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: RimEffect
-  m_Shader: {fileID: 4800000, guid: 7b6650aa8113e114baaf74822f3c6863, type: 3}
+  m_Name: Terrain
+  m_Shader: {fileID: 4800000, guid: 92002c08834fd314cb682d745575c1ba, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -18,6 +18,18 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _ATexture:
+        m_Texture: {fileID: 2800000, guid: bfde7cb3348587946baae00be32cfc8d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BTexture:
+        m_Texture: {fileID: 2800000, guid: 6f55126ce2a5a9a469740fa5569d98de, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BlendTexture:
+        m_Texture: {fileID: 2800000, guid: 0c404b333437df140a7531f54d2dedd6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -38,6 +50,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _GTexture:
+        m_Texture: {fileID: 2800000, guid: f4462519a583dc743a4c2a927a9c7ecd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -54,13 +70,15 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _RTexture:
+        m_Texture: {fileID: 2800000, guid: edd02b6e82c0c5746bc5b24b964478fd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _DotProduct: -0.37
     - _DstBlend: 0
-    - _Gloss: 20
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -74,6 +92,8 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0, g: 0.37931037, b: 1, a: 1}
-    - _Diffuse: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorA: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorB: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _MainTint: {r: 1, g: 1, b: 1, a: 1}
